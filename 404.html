@@ -1,15 +1,9 @@
 ---
 layout: page
-title: "404: Page not found"
-permalink: 404.html
+permalink: /404.html
+title: "Page not found"
+description: "Looks like there has been a mistake. Nothing exists here."
+redirect: true
 ---
-<div class="flex-row-between">
-	<a href="{{ site.url }}{{ site.baseurl}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-</div>
-<p>
-😕 Whoops... I've misplaced that URL or it's pointing to something that doesn't exist.
-If you think this is an error, please open an <a href="https://github.com/P0WEX/Gesko/issues/new" target="_blank" rel="noopener noreferrer">issue</a>.
 
-</p>
-
-
+<p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="{{ site.baseurl | prepend: site.url }}/">here</a>.</p>
