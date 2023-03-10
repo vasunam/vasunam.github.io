@@ -4,27 +4,15 @@ title: Home
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  My name is Namratha Vasu. I am Product Manager, currently attending graduate school at Duke University. 
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+### What I do
+I have worked across the spectrum — a seed stage startup, a non-profit, and a publicly traded corporate giant. From my experiences so far, I have learnt that my biggest skill lies in my ability to get teams aligned, plan a product, and most importantly — actually shipping the product.
 
-There are currently two themes built on Poole:
+In the past, I have helped pivot a product that simply wasn't working, fix up broken releases, and convinced a CEO to re-architect his product because the our understanding of the solution was not right. I take inspiration from this [quote](https://manassaloi.com/2022/05/01/stop-reading-pm-blogs.html)
+> They bring energy, take ownership, and get shit done. They know how to influence people. They observe and learn. And then watch Netflix at night and chill.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+### Hire Me
+If you think my skills and approach to work can be of use to your organization, do reach out to me! Here is my [resume](https://www.dropbox.com/s/6yvo9hyt77vu9r8/NamrathaVasu_resume_18_11_22.docx%20%281%29.pdf?dl=0)
