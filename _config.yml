@@ -9,18 +9,18 @@ permalink:        pretty
 # Setup
 title:            Namratha Vasu 
 tagline:          ''
-description:      "The world's greatest Product Manager"
+description:      "Community, Collaboration, and Creativity."
 url:              http://hyde.getpoole.com
 baseurl:          "https://vasunam.github.io/"
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Namratha Vasu'
+  url:            https://twitter.com/Namratha_Vasu
 
     #paginate:         5
 
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/poole/hyde
+# github:
+#   repo:           https://github.com/poole/hyde
