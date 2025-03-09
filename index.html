@@ -8,95 +8,121 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-EX1XWRKFQR');
-    </script>    <meta charset="UTF-8">
+    </script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>About Me - Namratha Vasu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="city-background" id="cityBackground">
-        <div class="rain"></div>
-    </div>
-    <div class="ny-filter"></div>
-    <div class="grain"></div>
 
-    <nav>
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="index.html" class="active">About Me</a>
-                <a href="thoughts.html">Thoughts</a>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__links">
+                <a href="index.html" class="nav__link nav__link--active">About Me</a>
+                <a href="thoughts.html" class="nav__link">Thoughts</a>
             </div>
         </div>
     </nav>
 
-    <main>
+    <main class="main">
         <section id="about" class="section">
-            <div class="about-header">
-                <div class="profile-pic-container">
-                    <img src="profile.jpg" alt="Namratha Vasu" class="profile-pic-placeholder">
+            <div class="card depth-shadow">
+                <div class="flex flex-col md:flex-row gap-lg">
+                    <div class="profile-pic-container" style="flex-shrink: 0; align-self: center; padding: var(--spacing-md);">
+                        <img src="profile.jpg" alt="Namratha Vasu" class="profile-pic-placeholder" style="border-radius: var(--radius-circle); width: 180px; height: 180px; object-fit: cover; box-shadow: var(--shadow-md); border: var(--border-width-thin) solid var(--color-grey-200);">
+                    </div>
+                    <div class="content-block" style="flex: 1; padding: var(--spacing-md); border: none;">
+                        <h1 style="margin-top: 0; color: var(--color-grey-800); font-family: 'Spectral', serif;">About Me</h1>
+                        <div class="section-divided">
+                            <p>Hey this is Namratha. I live in New York City, you'll find my thoughts on product, businesses and things I find interesting here.</p>
+                            <p>I'm a Product Manager (prev an SDE) at a fintech startup, I love hosting friends and meeting new ones. You can follow my journey on <a href="https://x.com/Namratha_Vasu" target="_blank" rel="noopener noreferrer" class="twitter-link border-animation">
+                                <svg class="twitter-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+                                    <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                </svg>
+                                <span>@Namratha_Vasu</span>
+                            </a>!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-intro">
-                    <h1>About Me</h1>
-                    <p>Hey this is Namratha. I live in New York City, you'll find my thoughts on product, businesses and things I find interesting here.</p>
-                </div>
-            </div>
-            <div class="content">
-                <p>I'm a Product Manager (prev an SDE) at a fintech startup, I love hosting friends and meeting new ones. You can follow my journey on <a href="https://x.com/Namratha_Vasu" target="_blank" rel="noopener noreferrer" class="twitter-link">
-                    <svg class="twitter-icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                    </svg>
-                    <span>@Namratha_Vasu</span>
-                </a>!</p>
             </div>
         </section>
 
-        <section class="section projects">
-            <h2>Current Projects</h2>
-            <div class="project-grid">
+        <section class="section">
+            <h2 class="mb-lg" style="color: var(--color-grey-800); font-family: 'Spectral', serif;">Current Projects</h2>
+            <div class="card-grid">
                 <!-- Cafe Project NYC Card -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <span class="project-emoji">☕️</span>
-                            <h3>Cafe Project NYC</h3>
+                <div class="card depth-shadow">
+                    <div class="flex flex-col gap-md" style="padding: var(--spacing-md);">
+                        <div class="flex items-center gap-sm">
+                            <span class="project-icon" style="display: inline-block; width: 32px; height: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="vintage-icon">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                    <path d="M6 12a2 2 0 0 0 4 0"></path>
+                                </svg>
+                            </span>
+                            <h3 class="mb-0" style="color: var(--color-grey-800); font-family: 'Spectral', serif;">Cafe Project NYC</h3>
                         </div>
-                        <p>Exploring and reviewing the best cafes across New York City. Join me on my coffee adventures!</p>
-                        <div class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dsRZ9Oeh2Iw?si=lwSg4WlnEM-Fsie7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div>
+                            <p>Exploring and reviewing the best cafes across New York City. Join me on my coffee adventures!</p>
+                        </div>
+                        <div class="video-wrapper" style="border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm);">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dsRZ9Oeh2Iw?si=lwSg4WlnEM-Fsie7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
 
                 <!-- Upskilling AI Card -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <span class="project-emoji">🤖</span>
-                            <h3>Upskilling AI</h3>
+                <div class="card depth-shadow">
+                    <div class="flex flex-col gap-md" style="padding: var(--spacing-md);">
+                        <div class="flex items-center gap-sm">
+                            <span class="project-icon" style="display: inline-block; width: 32px; height: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="vintage-icon">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                    <rect x="9" y="9" width="2" height="2"></rect>
+                                    <rect x="13" y="9" width="2" height="2"></rect>
+                                    <path d="M8 16s1.5 2 4 2 4-2 4-2"></path>
+                                    <path d="M2 16a9 9 0 0 0 20 0"></path>
+                                </svg>
+                            </span>
+                            <h3 class="mb-0" style="color: var(--color-grey-800); font-family: 'Spectral', serif;">Upskilling AI</h3>
                         </div>
-                        <p>Fun fact: This website was built using AI (Windsurf)! I'm passionate about exploring how AI tools can enhance creativity and productivity. Stay tuned for more insights as I document my journey of becoming a better PM through modern AI tools.</p>
+                        <div>
+                            <p>Fun fact: This website was built using AI (Windsurf)! I'm passionate about exploring how AI tools can enhance creativity and productivity.</p>
+                            <p>Stay tuned for more insights as I document my journey of becoming a better PM through modern AI tools.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="social-links">
-            <a href="https://x.com/Namratha_Vasu" target="_blank" rel="noopener noreferrer" class="social-link">
-                <svg class="twitter-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                </svg>
-                <span>@Namratha_Vasu</span>
-            </a>
-        </div>
+        <section class="section">
+            <div class="card depth-shadow text-center" style="padding: var(--spacing-lg);">
+                <h3 class="mb-md" style="color: var(--color-grey-800); font-family: 'Spectral', serif;">Connect With Me</h3>
+                <a href="https://x.com/Namratha_Vasu" target="_blank" rel="noopener noreferrer" class="button glow-effect" style="display: inline-flex; align-items: center; background-color: var(--color-grey-200); color: var(--color-grey-800); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); border: var(--border-width-thin) solid var(--color-grey-300); transition: all var(--transition-normal);">
+                    <svg class="twitter-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" style="margin-right: var(--spacing-sm);">
+                        <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </svg>
+                    <span>@Namratha_Vasu</span>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p> 2025 | Created with ❤️</p>
+    <footer class="footer">
+        <p>© 2025 | Created with 
+            <span class="footer-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </span>
+        </p>
     </footer>
-
-    <script src="animations.js"></script>
 </body>
 </html>
