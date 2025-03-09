@@ -15,43 +15,37 @@
     <meta name="post-tags" content="ai,web-development,windsurf">
     <meta name="post-description" content="How I used Windsurf to create a personal website that reflects my style">
     <title>Building My Website with AI - Namratha Vasu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../animations.css">
-    <link rel="stylesheet" href="../post-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/post-formatter.js" defer></script>
 </head>
-<body>
-    <!-- Background Elements -->
-    <div class="city-background" id="cityBackground">
-        <div class="rain"></div>
-    </div>
-    <div class="ny-filter"></div>
-    <div class="grain"></div>
+<body class="blog-post">
 
-    <nav>
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="../index.html">About Me</a>
-                <a href="../thoughts.html">Thoughts</a>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__links">
+                <a href="../index.html" class="nav__link">About Me</a>
+                <a href="../thoughts.html" class="nav__link">Thoughts</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <article class="post">
-            <header class="post-header">
+        <article>
+            <header>
                 <h1>Building My Website with AI</h1>
-                <div class="post-meta">
+                <div class="meta">
                     <time datetime="2025-01-25">January 25, 2025</time>
-                    <div class="post-tags">
-                        <span class="post-tag">ai</span>
-                        <span class="post-tag">web-development</span>
-                        <span class="post-tag">windsurf</span>
+                    <div class="tags">
+                        <span class="tag">ai</span>
+                        <span class="tag">web-development</span>
+                        <span class="tag">windsurf</span>
                     </div>
                 </div>
             </header>
             
-            <div class="post-content">
+            <div class="content">
                 <p>When I decided to rebuild my personal website, I wanted something that would truly reflect my aesthetic - clean, modern, and with a touch of New York City's nighttime charm. Enter Windsurf, an AI-powered development tool that helped me bring this vision to life.</p>
 
                 <h2>The Vision</h2>
@@ -72,18 +66,8 @@
         </article>
     </main>
 
-    <footer>
-        <p>2025 | Created with ❤️</p>
+    <footer class="footer">
+        <p>© 2025 | Created with ❤️</p>
     </footer>
-
-    <script src="../animations.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Initialize background animations
-            createBuildings();
-            createTaxis();
-            createHeadlights();
-        });
-    </script>
 </body>
 </html>

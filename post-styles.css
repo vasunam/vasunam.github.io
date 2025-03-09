@@ -14,6 +14,7 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #fff;
+    font-family: 'Spectral', serif;
 }
 
 /* Search and Filter */
@@ -98,6 +99,7 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1.3;
+    font-family: 'Spectral', serif;
 }
 
 .post-card h2 a {
@@ -117,6 +119,7 @@
     margin-bottom: 1rem;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
+    font-family: 'Lora', serif;
 }
 
 .post-card-tags {
@@ -130,6 +133,7 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     font-size: 0.8rem;
+    font-family: 'Lora', serif;
 }
 
 .post-card-description {
@@ -157,18 +161,21 @@
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
+    font-family: 'Spectral', serif;
 }
 
 .post-content {
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.8;
     font-size: 1.1rem;
+    font-family: 'Lora', serif;
 }
 
 .post-content h2 {
     color: #fff;
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
+    font-family: 'Spectral', serif;
 }
 
 .post-content p {
