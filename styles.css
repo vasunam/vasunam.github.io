@@ -15,7 +15,7 @@ body {
     font-family: 'Lora', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: var(--line-height);
     overflow-x: hidden;
     min-height: 100vh;
 }
@@ -136,6 +136,7 @@ body {
     margin-bottom: 2rem;
     box-shadow: 
         0 4px 6px rgba(0, 0, 0, 0.1),
+        0 6px 12px rgba(0, 0, 0, 0.05),
         inset 0 0 0 1px rgba(255, 255, 255, 0.2),
         inset 0 0 20px rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -165,9 +166,11 @@ body {
 .section:hover {
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 
-        0 4px 12px rgba(0, 0, 0, 0.15),
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        0 12px 24px rgba(0, 0, 0, 0.05),
         inset 0 0 0 1px rgba(255, 255, 255, 0.25),
         inset 0 0 30px rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 /* Enhanced text contrast */
@@ -177,14 +180,14 @@ body {
     color: rgba(255, 255, 255, 0.95);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-heading);
     font-family: 'Spectral', serif;
 }
 
 .section .content {
     color: rgba(255, 255, 255, 0.95);
     font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     font-family: 'Lora', serif;
 }
