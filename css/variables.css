@@ -2,6 +2,7 @@
 :root {
     /* Monochrome Color Palette */
     --color-white: #F5F5F5;
+    --color-cream: #f8f7f4;
     --color-light-grey: #E0E0E0;
     --color-grey-100: #D1D1D1;
     --color-grey-200: #B8B8B8;
@@ -14,8 +15,9 @@
     --color-black: #1A1A1A;
     
     /* Functional Colors */
-    --bg-color: var(--color-white);
-    --text-color: var(--color-grey-800);
+    --bg-color: var(--color-cream);
+    --text-color: #444444;
+    --text-color-heading: var(--color-grey-800);
     --text-color-muted: var(--color-grey-600);
     --accent-color: var(--color-grey-300);
     --accent-color-hover: var(--color-grey-400);
@@ -32,7 +34,8 @@
     /* Typography */
     --font-heading: 'Spectral', serif;
     --font-body: 'Lora', serif;
-    --line-height: 1.6;
+    --line-height: 1.7;
+    --letter-spacing-heading: 0.03em;
     
     /* Font Sizes */
     --font-size-xs: 0.75rem;   /* 12px */
