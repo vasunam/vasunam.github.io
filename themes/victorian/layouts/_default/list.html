@@ -1,0 +1,73 @@
+{{ define "main" }}
+<section class="section">
+  <!-- <div class="card depth-shadow"> -->
+    <div class="flex justify-between items-center mb-lg" style="padding: var(--spacing-md);">
+      <h1 class="mb-0" style="margin-top: 0; color: white; font-family: 'Spectral', serif; background-color: rgba(139, 58, 58, 0.8); padding: 0.5rem 1.5rem; display: inline-block;">{{ .Title }}</h1>
+      <div class="search-container flex gap-md">
+        <input type="text" id="searchInput" placeholder="Search posts..." class="search-input">
+      </div>
+    </div>
+    
+   
+  <!-- </div> -->
+
+  <div class="card-grid" id="postsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); justify-content: space-between;">
+    {{ range .Pages }}
+    <article class="card depth-shadow">
+      <div class="flex flex-col gap-md" style="padding: var(--spacing-md);">
+        <h3 style="color: var(--color-grey-800); font-family: 'Spectral', serif;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="flex flex-col">
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm" style="margin-bottom: var(--spacing-sm)">{{ .Date.Format "January 2, 2006" }}</time>
+          <div class="post-tags" style="margin-bottom: var(--spacing-sm)">
+            {{ range .Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        <p class="post-description">{{ .Description }}</p>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set up search functionality
+    const searchInput = document.getElementById('searchInput');
+    const postsGrid = document.getElementById('postsGrid');
+    const originalPosts = [...postsGrid.children];
+    
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        // Clear the grid
+        postsGrid.innerHTML = '';
+        
+        // Filter and display posts
+        const filteredPosts = originalPosts.filter(post => {
+          const title = post.querySelector('h3 a').textContent.toLowerCase();
+          const description = post.querySelector('.post-description').textContent.toLowerCase();
+          const tags = [...post.querySelectorAll('.tag')].map(tag => tag.textContent.toLowerCase());
+          
+          return title.includes(searchTerm) || 
+                 description.includes(searchTerm) || 
+                 tags.some(tag => tag.includes(searchTerm));
+        });
+        
+        if (filteredPosts.length === 0) {
+          postsGrid.innerHTML = '<div class="card depth-shadow"><p style="padding: var(--spacing-md); font-family: \'Lora\', serif;">No posts found matching your criteria.</p></div>';
+          return;
+        }
+        
+        filteredPosts.forEach(post => {
+          postsGrid.appendChild(post);
+        });
+      });
+    }
+  });
+</script>
+{{ end }}
