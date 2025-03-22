@@ -1,0 +1,38 @@
+# Build Hugo site and Deploy to Github Pages
+name: Hugo site CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+    # Setup Hugo
+    - name: 🔧 Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    # Build
+    - name: 👷 Build with Hugo
+      run: hugo --minify
+
+    # Deploy to GitHub Pages
+    - name: 🚀 Deploy to Github Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: docs # The folder the action should deploy.
