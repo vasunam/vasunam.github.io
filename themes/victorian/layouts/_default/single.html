@@ -1,0 +1,31 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/post-styles.css">
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+  <article class="card depth-shadow" style="padding: var(--spacing-lg);">
+    <header>
+      <h1 style="color: var(--color-grey-800); font-family: 'Spectral', serif;">{{ .Title }}</h1>
+      <div class="meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm" style="margin-bottom: var(--spacing-sm)">{{ .Date.Format "January 2, 2006" }}</time>
+        <div class="post-tags" style="margin-bottom: var(--spacing-md)">
+          {{ range .Params.tags }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </header>
+    
+    <div class="content">
+      {{ .Content }}
+    </div>
+    
+    <div class="post-footer mt-lg" style="margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); border-top: var(--border-width-thin) solid var(--color-grey-200);">
+      <a href="{{ "posts" | relURL }}" class="button" style="display: inline-flex; align-items: center; background-color: var(--color-grey-200); color: var(--color-grey-800); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); border: var(--border-width-thin) solid var(--color-grey-300); transition: all var(--transition-normal);">
+        &larr; Back to All Posts
+      </a>
+    </div>
+  </article>
+</section>
+{{ end }}

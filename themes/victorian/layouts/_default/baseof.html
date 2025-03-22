@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ if .Site.Params.enableGoogleAnalytics }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsID }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ .Site.Params.googleAnalyticsID }}');
+  </script>
+  {{ end }}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  
+  <!-- Main stylesheet that imports core styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <!-- Visual theme styles -->
+  <link rel="stylesheet" href="/css/victorian-border.css">
+  <link rel="stylesheet" href="/css/vine-background.css">
+  <link rel="stylesheet" href="/css/drop-cap.css">
+  
+  <!-- Custom overrides -->
+  <link rel="stylesheet" href="/css/text-override.css">
+  
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  <!-- Victorian Vine Border -->
+  <div class="victorian-border-container">
+    <div class="victorian-border border-top"></div>
+    <div class="victorian-border border-right"></div>
+    <div class="victorian-border border-bottom"></div>
+    <div class="victorian-border border-left"></div>
+    <div class="border-corner corner-top-left"></div>
+    <div class="border-corner corner-top-right"></div>
+    <div class="border-corner corner-bottom-right"></div>
+    <div class="border-corner corner-bottom-left"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__links">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relLangURL }}" class="nav__link{{ if $currentPage.IsMenuCurrent "main" . }} nav__link--active{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} nav__link--active{{ end }}{{ if eq $currentPage.RelPermalink .URL }} nav__link--active{{ end }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="footer">
+    <p>{{ .Site.Params.copyright | safeHTML }}</p>
+  </footer>
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>
