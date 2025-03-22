@@ -1,24 +1,5 @@
 /* Text color override for visibility and vintage paper styling */
 
-/* Remove white card on thoughts page */
-.section > .card,
-.section > div,
-.section .card.depth-shadow,
-body .section > .card,
-section.section > div,
-.card.depth-shadow,
-.section > .card.depth-shadow {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-.section .thoughts-heading h1 {
-    color: #ffffff !important;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
-}
-
 /* Add subtle paper texture to background */
 body {
     background-color: var(--color-cream) !important;

@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
+/* Ensure drop-cap class is properly applied */
+p.drop-cap {
+    color: #333333 !important;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
 .drop-cap::first-letter {
     float: left;
     font-family: 'Playfair Display', serif;
@@ -12,12 +22,9 @@
     padding-right: 0.12em;
     padding-left: 0;
     margin-bottom: -0.1em;
-    /* Rich colors from the Victorian pattern image */
-    color: #8B3A3A; /* Deep red fallback */
-    background: linear-gradient(to bottom, #8B3A3A 10%, #a04040 30%, #C19A6B 70%, #5a6b3d 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Solid color for better visibility */
+    color: #8B3A3A;
+    text-shadow: 1px 1px 0px rgba(139, 58, 58, 0.2);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     position: relative;

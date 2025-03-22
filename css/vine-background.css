@@ -8,11 +8,6 @@
     background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* Remove white background from the Thoughts page section */
-body .main .section {
-    background-color: transparent !important;
-}
-
 /* Make the cards inside sections have solid white background */
 .section .card.depth-shadow {
     background-color: white !important;
