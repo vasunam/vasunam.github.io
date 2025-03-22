@@ -1,28 +1,41 @@
-# Personal Website
+# Victorian-Inspired Personal Website
 
-A clean and modern personal website with two main sections:
+A personal website built with Hugo, featuring a vintage Victorian-inspired design with two main sections:
 - About Me: A section to share your personal story and experiences
-- Thoughts: A section to share your ideas and insights
+- Thoughts: A blog section with a vintage aesthetic to share your ideas and insights
 
-## Structure
+## Site Structure
 
-### HTML Files
-- `index.html`: The main webpage containing the about me section
-- `thoughts.html`: The blog listing page
-- `templates/post_template.html`: Template for individual blog posts
+### Configuration
+- `hugo.toml`: Main Hugo configuration file with site parameters
 
-### CSS Files (Modular Structure)
-- `css/main.css`: Main CSS file that imports all component CSS files
-- `css/variables.css`: CSS variables for consistent theming
-- `css/base.css`: Base styles and CSS reset
-- `css/layout.css`: Layout styles for navigation, main content, and footer
-- `css/background.css`: Styles for background effects and animations
-- `css/content.css`: Styles for blog posts and content
+### Content
+- `content/_index.md`: Homepage content (About Me section)
+- `content/posts/`: Directory containing all blog posts
+- `content/posts/_index.md`: Blog listing page configuration
 
-### JavaScript Files
-- `js/animations.js`: Handles the NYC-themed background animations
-- `js/blog.js`: Manages blog post display and filtering
-- `js/posts-data.json`: JSON data file containing blog post information
+### Theme Structure (victorian)
+- `themes/victorian/layouts/_default/baseof.html`: Base template for all pages
+- `themes/victorian/layouts/index.html`: Homepage template
+- `themes/victorian/layouts/_default/list.html`: Blog listing template (Thoughts section)
+- `themes/victorian/layouts/_default/single.html`: Individual post template
+
+### CSS Files (Optimized Structure)
+
+#### Core Styles (imported by main.css)
+- `/css/variables.css`: CSS variables for consistent theming (colors, spacing, typography)
+- `/css/base.css`: Base styles and CSS reset
+- `/css/layout.css`: Layout styles for navigation, grid systems, and spacing
+- `/css/content.css`: Styles for content elements (text, cards, etc.)
+- `/css/styles.css`: Additional global styles and utilities
+
+#### Theme Styles (imported separately)
+- `/css/victorian-border.css`: Victorian-themed decorative borders
+- `/css/vine-background.css`: Victorian vine pattern backgrounds
+- `/css/drop-cap.css`: Decorative drop caps for paragraphs
+
+#### Overrides
+- `/css/text-override.css`: Custom overrides for specific elements (fixes the card backgrounds on the Thoughts page)
 
 ## Features
 - Responsive design that works on both desktop and mobile devices
@@ -34,21 +47,42 @@ A clean and modern personal website with two main sections:
 - Automated blog post generation using Python
 - NYC-themed animated background with dynamic elements
 
-## Blog System
+## Hugo Usage
+
+### Development
+
+To run the site locally during development:
+
+```bash
+hugo server -D
+```
+
+This will start a local server at http://localhost:1313/ with live reloading enabled.
+
+### Building for Production
+
+To build the site for production:
+
+```bash
+hugo
+```
+
+This will generate the static site in the `public/` directory.
 
 ### Creating a New Blog Post
 
 1. **Create a Markdown File**
-   - Create a new markdown file in the `content/posts` directory
+   - Create a new markdown file in the `content/posts/` directory
    - Name your file using kebab-case, e.g., `my-new-post.md`
 
 2. **Add Frontmatter**
    ```markdown
    ---
-   title: Your Post Title
+   title: "Your Post Title"
    date: YYYY-MM-DD
-   tags: [tag1, tag2, tag3]
-   description: Your post description
+   draft: false
+   tags: ["tag1", "tag2", "tag3"]
+   description: "Your post description"
    ---
    ```
 

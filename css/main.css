@@ -1,8 +1,15 @@
-/* Main CSS file that imports all components */
+/* Main CSS file that imports all core components */
 @import url('variables.css');
 @import url('base.css');
 @import url('layout.css');
-@import url('background.css');
 @import url('content.css');
+@import url('styles.css');
 
-/* Any additional global styles can be added here */
+/* Global styles */
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    overflow-x: hidden;
+}
