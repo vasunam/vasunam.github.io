@@ -2,6 +2,7 @@ baseURL = 'https://vasunam.github.io/'
 languageCode = 'en-us'
 title = 'Namratha Vasu'
 theme = 'victorian'
+publishDir = 'docs'
 
 # Enable syntax highlighting
 [markup.highlight]
