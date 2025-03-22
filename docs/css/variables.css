@@ -1,8 +1,8 @@
 /* CSS Variables for consistent theming */
 :root {
     /* Monochrome Color Palette */
-    --color-white: #FFFFFF;
-    --color-cream: #FAFAFA;
+    --color-white: #F0EEE6;
+    --color-cream: F0EEE6;
     --color-light-grey: #F5F5F5;
     --color-grey-100: #EEEEEE;
     --color-grey-200: #E0E0E0;

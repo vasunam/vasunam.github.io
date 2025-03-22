@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
     --bg-color: #1a1a1a;
-    --text-color: #ffffff;
+    --text-color: #F0EEE6;
     --accent-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -99,12 +99,12 @@ body {
 }
 
 .nav__link:hover {
-    color: #ffffff;
+    color: #F0EEE6;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav__link--active {
-    color: #ffffff;
+    color: #F0EEE6;
     background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -267,7 +267,7 @@ body {
 }
 
 .content a:hover {
-    color: #ffffff;
+    color: #F0EEE6;
     border-bottom-color: rgba(255, 255, 255, 0.6);
 }
 

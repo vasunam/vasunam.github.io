@@ -15,7 +15,7 @@ section.section > div,
 }
 
 .section .thoughts-heading h1 {
-    color: #ffffff !important;
+    color: #F0EEE6 !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -44,7 +44,7 @@ p, span, div, li, td, th {
 
 /* Headings - both in cards and elsewhere */
 h1, h2, h4, h5, h6, .card h1, .card h2, .card h4, .card h5, .card h6, .section h2 {
-    color: #ffffff !important;
+    color: #F0EEE6 !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -103,7 +103,7 @@ time, .post-meta, .text-sm {
     border-radius: 4px !important;
     display: inline-block !important;
     margin-bottom: 20px !important;
-    color: #ffffff !important;
+    color: #F0EEE6 !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
