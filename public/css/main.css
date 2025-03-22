@@ -1,0 +1,9 @@
+/* Main CSS file that imports all components */
+@import url('variables.css');
+@import url('base.css');
+@import url('layout.css');
+@import url('background.css');
+@import url('content.css');
+@import url('custom.css'); /* Added custom styles with card grid improvements */
+
+/* Any additional global styles can be added here */

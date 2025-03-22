@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Building My Website with AI",
+    "date": "2025-01-25",
+    "tags": ["ai", "web-development", "windsurf"],
+    "description": "How I used Windsurf to create a personal website that reflects my style",
+    "url": "posts/building-with-ai.html"
+  },
+  {
+    "title": "My Favorite NYC Cafes of 2025",
+    "date": "2025-01-24",
+    "tags": ["cafes", "nyc", "coffee", "reviews"],
+    "description": "My top picks for the best coffee spots in New York City this year",
+    "url": "posts/favorite-cafes-2025.html"
+  },
+  {
+    "title": "The Future of Product Management in the AI Era",
+    "date": "2025-01-20",
+    "tags": ["product-management", "ai", "tech", "career"],
+    "description": "How AI is changing the landscape of product management and what it means for PMs",
+    "url": "posts/product-management-ai.html"
+  }
+]

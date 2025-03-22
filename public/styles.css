@@ -1,0 +1,126 @@
+/* Main stylesheet that imports all other stylesheets */
+
+/* First import variables for consistent theming */
+@import url('variables.css');
+
+/* Global styling */
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-color-heading);
+    margin: var(--spacing-md) 0;
+    line-height: 1.3;
+    letter-spacing: var(--letter-spacing-heading);
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--text-color-heading);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color-hover);
+    text-decoration: underline;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-md);
+    border: var(--border-width-thin) solid var(--border-color);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.depth-shadow {
+    box-shadow: var(--shadow-md);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Layout utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.gap-md {
+    gap: var(--spacing-md);
+}
+
+.gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Content styles */
+.content-block p {
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Section spacing */
+.section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-lg);
+    }
+}
