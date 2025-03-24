@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social-Media on Namratha Vasu</title>
-    <link>http://localhost:1313/tags/social-media/</link>
+    <link>https://vasunam.github.io/tags/social-media/</link>
     <description>Recent content in Social-Media on Namratha Vasu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vasunam.github.io/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stories Feature</title>
-      <link>http://localhost:1313/great-ideas/stories-feature/</link>
+      <link>https://vasunam.github.io/great-ideas/stories-feature/</link>
       <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/great-ideas/stories-feature/</guid>
+      <guid>https://vasunam.github.io/great-ideas/stories-feature/</guid>
       <description>&lt;h1 id=&#34;stories-feature-from-ephemeral-sharing-to-platform-standard&#34;&gt;Stories Feature: From Ephemeral Sharing to Platform Standard&lt;/h1&gt;&#xA;&lt;p&gt;Instagram&amp;rsquo;s Stories feature represents one of the most influential product innovations in social media, transforming how users share and consume content across platforms.&lt;/p&gt;&#xA;&lt;p&gt;This case study examines how the feature evolved from a simple concept borrowed from Snapchat into a platform-defining format that has been adopted across the social media landscape.&lt;/p&gt;</description>
     </item>
   </channel>

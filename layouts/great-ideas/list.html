@@ -10,7 +10,7 @@
   <div class="stage-filter-container" style="padding: 0 var(--spacing-md);">
     <button class="stage-filter-button active" data-stage="all">All Stages</button>
     <button class="stage-filter-button stage-filter-spark" data-stage="spark">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon" style="margin-right: 0.3rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon">
         <!-- Single spark shape -->
         <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
               fill="#FFD700"
@@ -22,7 +22,7 @@
       Spark
     </button>
     <button class="stage-filter-button stage-filter-ember" data-stage="ember">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon" style="margin-right: 0.3rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon">
         <!-- Ember base shape -->
         <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
               fill="#FF7F00"
@@ -41,7 +41,10 @@
       </svg>
       Ember
     </button>
-    <button class="stage-filter-button stage-filter-fire" data-stage="fire">🔥 <br> Fire</button>
+    <button class="stage-filter-button stage-filter-fire" data-stage="fire">
+      <span class="fire-emoji">🔥</span>
+      Fire
+    </button>
   </div>
 
   <div class="card-grid" id="postsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); justify-content: space-between;">

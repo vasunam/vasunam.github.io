@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nyc on Namratha Vasu</title>
-    <link>http://localhost:1313/tags/nyc/</link>
+    <link>https://vasunam.github.io/tags/nyc/</link>
     <description>Recent content in Nyc on Namratha Vasu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nyc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vasunam.github.io/tags/nyc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Favorite NYC Cafes of 2025</title>
-      <link>http://localhost:1313/posts/favorite-cafes-2025/</link>
+      <link>https://vasunam.github.io/posts/favorite-cafes-2025/</link>
       <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/favorite-cafes-2025/</guid>
+      <guid>https://vasunam.github.io/posts/favorite-cafes-2025/</guid>
       <description>&lt;p&gt;As someone who&amp;rsquo;s deeply passionate about coffee and cafe culture, I&amp;rsquo;ve spent countless hours exploring New York&amp;rsquo;s diverse coffee scene. Here are my top picks for 2025, each offering something unique to the city&amp;rsquo;s rich cafe landscape.&lt;/p&gt;&#xA;&lt;h2 id=&#34;best-overall-experience&#34;&gt;Best Overall Experience&lt;/h2&gt;&#xA;&lt;p&gt;This year&amp;rsquo;s standout has been the combination of exceptional coffee and atmosphere at several locations. What makes these places special isn&amp;rsquo;t just their coffee (though that&amp;rsquo;s certainly important), but the overall experience they create.&lt;/p&gt;</description>
     </item>
   </channel>
