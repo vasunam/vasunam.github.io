@@ -1,0 +1,131 @@
+/* Great Ideas from other Products - Custom Styling */
+
+/* Stage Indicators */
+.stage-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.stage-spark {
+  background-color: rgba(255, 204, 0, 0.2);
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+.stage-ember {
+  background-color: rgba(255, 153, 0, 0.2);
+  color: #ff9900;
+  border: 1px solid #ff9900;
+}
+
+.stage-fire {
+  background-color: rgba(255, 51, 0, 0.2);
+  color: #ff3300;
+  border: 1px solid #ff3300;
+}
+
+/* Icons */
+.flame-icon, .spark-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.spark-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Expanded View Styling */
+.idea-expanded {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.idea-stage {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.idea-stage-spark {
+  border-left: 3px solid #ffcc00;
+  background-color: rgba(255, 204, 0, 0.05);
+}
+
+.idea-stage-ember {
+  border-left: 3px solid #ff9900;
+  background-color: rgba(255, 153, 0, 0.05);
+}
+
+.idea-stage-fire {
+  border-left: 3px solid #ff3300;
+  background-color: rgba(255, 51, 0, 0.05);
+}
+
+.stage-navigation {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.stage-nav-button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stage-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Stage filter buttons */
+.stage-filter-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stage-filter-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-color: #F0EEE6;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stage-filter-button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.stage-filter-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.stage-filter-spark {
+  border-color: #ffcc00;
+}
+
+.stage-filter-ember {
+  border-color: #ff9900;
+}
+
+.stage-filter-fire {
+  border-color: #ff3300;
+}
