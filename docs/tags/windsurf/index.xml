@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windsurf on Namratha Vasu</title>
-    <link>http://localhost:56685/tags/windsurf/</link>
+    <link>http://localhost:1313/tags/windsurf/</link>
     <description>Recent content in Windsurf on Namratha Vasu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:56685/tags/windsurf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/windsurf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building My Website with AI</title>
-      <link>http://localhost:56685/posts/building-with-ai/</link>
+      <link>http://localhost:1313/posts/building-with-ai/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56685/posts/building-with-ai/</guid>
+      <guid>http://localhost:1313/posts/building-with-ai/</guid>
       <description>&lt;p&gt;When I decided to rebuild my personal website, I wanted something that would truly reflect my aesthetic - clean, modern, and with a touch of New York City&amp;rsquo;s nighttime charm. Enter Windsurf, an AI-powered development tool that helped me bring this vision to life.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vision&#34;&gt;The Vision&lt;/h2&gt;&#xA;&lt;p&gt;I wanted my website to capture the essence of NYC after dark - the glowing windows, the rain-slicked streets, and that unmistakable energy that makes this city unique. But more than just aesthetics, I needed a platform that would grow with me, allowing me to share my thoughts and experiences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building My Website with AI</title>
-      <link>http://localhost:56685/posts/sample-post/</link>
+      <link>http://localhost:1313/posts/sample-post/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56685/posts/sample-post/</guid>
+      <guid>http://localhost:1313/posts/sample-post/</guid>
       <description>&lt;h1 id=&#34;building-my-website-with-ai&#34;&gt;Building My Website with AI&lt;/h1&gt;&#xA;&lt;p&gt;When I decided to rebuild my personal website, I wanted something that would truly reflect my aesthetic - clean, modern, and with a touch of New York City&amp;rsquo;s nighttime charm. Enter Windsurf, an AI-powered development tool that helped me bring this vision to life.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vision&#34;&gt;The Vision&lt;/h2&gt;&#xA;&lt;p&gt;I wanted my website to capture the essence of NYC after dark - the glowing windows, the rain-slicked streets, and that unmistakable energy that makes this city unique. But more than just aesthetics, I needed a platform that would grow with me, allowing me to share my thoughts and experiences.&lt;/p&gt;</description>
     </item>
   </channel>

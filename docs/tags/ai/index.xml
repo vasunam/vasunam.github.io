@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai on Namratha Vasu</title>
-    <link>http://localhost:56685/tags/ai/</link>
+    <link>http://localhost:1313/tags/ai/</link>
     <description>Recent content in Ai on Namratha Vasu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:56685/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Compose</title>
+      <link>http://localhost:1313/great-ideas/smart-compose/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/great-ideas/smart-compose/</guid>
+      <description>&lt;h1 id=&#34;smart-compose-evolution-of-an-ai-writing-assistant&#34;&gt;Smart Compose: Evolution of an AI Writing Assistant&lt;/h1&gt;&#xA;&lt;p&gt;Gmail&amp;rsquo;s Smart Compose feature represents a fascinating evolution of AI-assisted writing, progressing from basic predictive text to a sophisticated writing assistant that understands context, style, and intent.&lt;/p&gt;&#xA;&lt;p&gt;This case study examines how the feature evolved through three distinct stages of development, from initial concept to fully realized product feature.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building My Website with AI</title>
-      <link>http://localhost:56685/posts/building-with-ai/</link>
+      <link>http://localhost:1313/posts/building-with-ai/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56685/posts/building-with-ai/</guid>
+      <guid>http://localhost:1313/posts/building-with-ai/</guid>
       <description>&lt;p&gt;When I decided to rebuild my personal website, I wanted something that would truly reflect my aesthetic - clean, modern, and with a touch of New York City&amp;rsquo;s nighttime charm. Enter Windsurf, an AI-powered development tool that helped me bring this vision to life.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vision&#34;&gt;The Vision&lt;/h2&gt;&#xA;&lt;p&gt;I wanted my website to capture the essence of NYC after dark - the glowing windows, the rain-slicked streets, and that unmistakable energy that makes this city unique. But more than just aesthetics, I needed a platform that would grow with me, allowing me to share my thoughts and experiences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building My Website with AI</title>
-      <link>http://localhost:56685/posts/sample-post/</link>
+      <link>http://localhost:1313/posts/sample-post/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56685/posts/sample-post/</guid>
+      <guid>http://localhost:1313/posts/sample-post/</guid>
       <description>&lt;h1 id=&#34;building-my-website-with-ai&#34;&gt;Building My Website with AI&lt;/h1&gt;&#xA;&lt;p&gt;When I decided to rebuild my personal website, I wanted something that would truly reflect my aesthetic - clean, modern, and with a touch of New York City&amp;rsquo;s nighttime charm. Enter Windsurf, an AI-powered development tool that helped me bring this vision to life.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vision&#34;&gt;The Vision&lt;/h2&gt;&#xA;&lt;p&gt;I wanted my website to capture the essence of NYC after dark - the glowing windows, the rain-slicked streets, and that unmistakable energy that makes this city unique. But more than just aesthetics, I needed a platform that would grow with me, allowing me to share my thoughts and experiences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Future of Product Management in the AI Era</title>
-      <link>http://localhost:56685/posts/product-management-ai/</link>
+      <link>http://localhost:1313/posts/product-management-ai/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56685/posts/product-management-ai/</guid>
+      <guid>http://localhost:1313/posts/product-management-ai/</guid>
       <description>&lt;p&gt;As a Product Manager in the fintech space, I&amp;rsquo;ve witnessed firsthand how AI is revolutionizing not just our products, but the very way we approach product management. Here are my thoughts on this transformation and what it means for the future of our field.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-changing-role-of-pms&#34;&gt;The Changing Role of PMs&lt;/h2&gt;&#xA;&lt;p&gt;The integration of AI into product development has shifted the traditional PM role. We&amp;rsquo;re no longer just bridging technical and business requirements - we&amp;rsquo;re now orchestrating complex systems where AI is a key stakeholder in decision-making.&lt;/p&gt;</description>
     </item>
   </channel>

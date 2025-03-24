@@ -154,3 +154,13 @@ This will generate the static site in the `public/` directory.
   - For layout and structure: `layout.css`
   - For background effects: `background.css`
   - For content styling: `content.css`
+
+## Known Issues
+
+### SVG Rendering Issues
+
+1. **Ember SVG Icon Class Conflict**: 
+   - **Issue**: The `ember-icon` CSS class conflicts with SVG rendering, causing the ember icon not to display properly.
+   - **Workaround**: Currently using the `spark-icon` class for ember SVGs as a temporary solution.
+   - **Fix Needed**: Investigate CSS rules affecting the `ember-icon` class and correct them to properly support the ember SVG rendering.
+   - **Affected Files**: `layouts/great-ideas/list.html` and `layouts/great-ideas/single.html`

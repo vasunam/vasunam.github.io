@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on Namratha Vasu</title>
+    <link>http://localhost:1313/tags/email/</link>
+    <description>Recent content in Email on Namratha Vasu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Compose</title>
+      <link>http://localhost:1313/great-ideas/smart-compose/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/great-ideas/smart-compose/</guid>
+      <description>&lt;h1 id=&#34;smart-compose-evolution-of-an-ai-writing-assistant&#34;&gt;Smart Compose: Evolution of an AI Writing Assistant&lt;/h1&gt;&#xA;&lt;p&gt;Gmail&amp;rsquo;s Smart Compose feature represents a fascinating evolution of AI-assisted writing, progressing from basic predictive text to a sophisticated writing assistant that understands context, style, and intent.&lt;/p&gt;&#xA;&lt;p&gt;This case study examines how the feature evolved through three distinct stages of development, from initial concept to fully realized product feature.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

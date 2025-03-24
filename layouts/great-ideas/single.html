@@ -1,0 +1,188 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+      <div class="idea-source">{{ .Params.source }}</div>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <div class="post-meta-container" style="width: 100%; overflow: hidden;">
+        <div class="stage-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; overflow: hidden;">
+          {{ if .Params.stages }}
+            {{ range .Params.stages }}
+              {{ if eq . "spark" }}
+              <span class="stage-indicator stage-spark">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon">
+                  <!-- Single spark shape -->
+                  <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
+                        fill="#FFD700"
+                        stroke="#FF8C00"
+                        stroke-width="2" />
+                  <!-- Center glow -->
+                  <circle cx="50" cy="50" r="15" fill="#FFFFFF" opacity="0.5" />
+                </svg>
+                Spark
+              </span>
+              {{ end }}
+              {{ if eq . "ember" }}
+              <!-- TODO: There's a rendering issue with the 'ember-icon' class. 
+                   Currently using 'spark-icon' class as a workaround.
+                   This suggests there might be CSS conflicts targeting the ember-icon class specifically.
+                   Future fix: Investigate CSS rules affecting ember-icon class and correct them. -->
+              <span class="stage-indicator stage-ember">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon">
+                  <!-- Ember base shape -->
+                  <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
+                        fill="#FF7F00"
+                        stroke="#CC5500"
+                        stroke-width="2" />
+
+                  <!-- Inner glow -->
+                  <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z"
+                        fill="#FFCC00"
+                        opacity="0.8" />
+
+                  <!-- Ember highlights -->
+                  <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z"
+                        fill="#FFFFFF"
+                        opacity="0.4" />
+                </svg>
+                Ember
+              </span>
+              {{ end }}
+              {{ if eq . "fire" }}
+              <span class="stage-indicator stage-fire">
+                🔥 Fire
+              </span>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="tag-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem; overflow: hidden;">
+          {{ range .Params.tags }}
+          {{ if eq . "ember" }}
+          <span class="tag tag-ember">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon" style="width: 0.8rem; height: 0.8rem; margin-right: 0.2rem;">
+              <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z" fill="#FF7F00" stroke="#CC5500" stroke-width="2"></path>
+              <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z" fill="#FFCC00" opacity="0.8"></path>
+              <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z" fill="#FFFFFF" opacity="0.4"></path>
+            </svg>
+            {{ . }}
+          </span>
+          {{ else if eq . "fire" }}
+          <span class="tag tag-fire">
+            🔥 {{ . }}
+          </span>
+          {{ else }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+    
+    <div class="idea-stages-container">
+      <!-- Stage navigation -->
+      <div class="stage-navigation">
+        {{ if in .Params.stages "spark" }}
+        <button class="stage-nav-button active" data-target="stage-spark">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon" style="margin-right: 0.3rem; width: 0.9rem; height: 0.9rem;">
+            <!-- Single spark shape -->
+            <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
+                  fill="#FFD700"
+                  stroke="#FF8C00"
+                  stroke-width="2" />
+            <!-- Center glow -->
+            <circle cx="50" cy="50" r="15" fill="#FFFFFF" opacity="0.5" />
+          </svg>
+          Spark
+        </button>
+        {{ end }}
+        {{ if in .Params.stages "ember" }}
+        <button class="stage-nav-button" data-target="stage-ember">
+          <!-- TODO: There's a rendering issue with the 'ember-icon' class.
+               Currently using 'spark-icon' class as a workaround.
+               This suggests there might be CSS conflicts targeting the ember-icon class specifically.
+               Future fix: Investigate CSS rules affecting ember-icon class and correct them. -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon" style="margin-right: 0.3rem; width: 0.9rem; height: 0.9rem;">
+            <!-- Ember base shape -->
+            <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
+                  fill="#FF7F00"
+                  stroke="#CC5500"
+                  stroke-width="2" />
+
+            <!-- Inner glow -->
+            <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z"
+                  fill="#FFCC00"
+                  opacity="0.8" />
+
+            <!-- Ember highlights -->
+            <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z"
+                  fill="#FFFFFF"
+                  opacity="0.4" />
+          </svg>
+          Ember
+        </button>
+        {{ end }}
+        {{ if in .Params.stages "fire" }}
+        <button class="stage-nav-button" data-target="stage-fire">🔥 Fire</button>
+        {{ end }}
+      </div>
+      
+      <!-- Stage content -->
+      {{ if in .Params.stages "spark" }}
+      <div id="stage-spark" class="idea-stage idea-stage-spark">
+        <h3>Spark</h3>
+        <div>{{ .Params.sparkContent | markdownify }}</div>
+      </div>
+      {{ end }}
+      
+      {{ if in .Params.stages "ember" }}
+      <div id="stage-ember" class="idea-stage idea-stage-ember" style="display: none;">
+        <h3>Ember</h3>
+        <div>{{ .Params.emberContent | markdownify }}</div>
+      </div>
+      {{ end }}
+      
+      {{ if in .Params.stages "fire" }}
+      <div id="stage-fire" class="idea-stage idea-stage-fire" style="display: none;">
+        <h3>Fire</h3>
+        <div>{{ .Params.fireContent | markdownify }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
+
+{{ define "scripts" }}
+<link rel="stylesheet" href="/css/great-ideas.css">
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set up stage navigation
+    const stageNavButtons = document.querySelectorAll('.stage-nav-button');
+    const stageContents = document.querySelectorAll('.idea-stage');
+    
+    stageNavButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetStage = this.dataset.target;
+        
+        // Hide all stages
+        stageContents.forEach(content => {
+          content.style.display = 'none';
+        });
+        
+        // Show target stage
+        document.querySelector(`#${targetStage}`).style.display = 'block';
+        
+        // Update active button
+        stageNavButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  });
+</script>
+{{ end }}

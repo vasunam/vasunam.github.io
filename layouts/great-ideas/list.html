@@ -1,0 +1,262 @@
+{{ define "main" }}
+<section class="section">
+  <div class="flex justify-between items-center mb-lg" style="padding: var(--spacing-md);">
+    <h1 class="mb-0" style="margin-top: 0; color: white; font-family: 'Spectral', serif; background-color: rgba(139, 58, 58, 0.8); padding: 0.5rem 1.5rem; display: inline-block;">{{ .Title }}</h1>
+    <div class="search-container flex gap-md">
+      <input type="text" id="searchInput" placeholder="Search ideas..." class="search-input">
+    </div>
+  </div>
+  
+  <div class="stage-filter-container" style="padding: 0 var(--spacing-md);">
+    <button class="stage-filter-button active" data-stage="all">All Stages</button>
+    <button class="stage-filter-button stage-filter-spark" data-stage="spark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon" style="margin-right: 0.3rem;">
+        <!-- Single spark shape -->
+        <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
+              fill="#FFD700"
+              stroke="#FF8C00"
+              stroke-width="2" />
+        <!-- Center glow -->
+        <circle cx="50" cy="50" r="15" fill="#FFFFFF" opacity="0.5" />
+      </svg>
+      Spark
+    </button>
+    <button class="stage-filter-button stage-filter-ember" data-stage="ember">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon" style="margin-right: 0.3rem;">
+        <!-- Ember base shape -->
+        <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
+              fill="#FF7F00"
+              stroke="#CC5500"
+              stroke-width="2" />
+
+        <!-- Inner glow -->
+        <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z"
+              fill="#FFCC00"
+              opacity="0.8" />
+
+        <!-- Ember highlights -->
+        <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z"
+              fill="#FFFFFF"
+              opacity="0.4" />
+      </svg>
+      Ember
+    </button>
+    <button class="stage-filter-button stage-filter-fire" data-stage="fire">🔥 <br> Fire</button>
+  </div>
+
+  <div class="card-grid" id="postsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); justify-content: space-between;">
+    {{ range .Pages }}
+    <article class="card depth-shadow idea-card">
+      <div class="flex flex-col gap-md" style="padding: var(--spacing-md);">
+        <h3 style="color: var(--color-grey-800); font-family: 'Spectral', serif;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="flex flex-col">
+          <div class="idea-source text-sm" style="margin-bottom: var(--spacing-sm)">{{ .Params.source }}</div>
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm" style="margin-bottom: var(--spacing-sm)">{{ .Date.Format "January 2, 2006" }}</time>
+          <div class="flex flex-col" style="margin-bottom: var(--spacing-sm)">
+            <div class="stage-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; overflow: hidden;">
+              {{ if .Params.stages }}
+                {{ range .Params.stages }}
+                  {{ if eq . "spark" }}
+                  <span class="stage-indicator stage-spark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon">
+                      <!-- Single spark shape -->
+                      <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
+                            fill="#FFD700"
+                            stroke="#FF8C00"
+                            stroke-width="2" />
+                      <!-- Center glow -->
+                      <circle cx="50" cy="50" r="15" fill="#FFFFFF" opacity="0.5" />
+                    </svg>
+                    Spark
+                  </span>
+                  {{ end }}
+                  {{ if eq . "ember" }}
+                  <!-- TODO: There's a rendering issue with the 'ember-icon' class. 
+                       Currently using 'spark-icon' class as a workaround.
+                       This suggests there might be CSS conflicts targeting the ember-icon class specifically.
+                       Future fix: Investigate CSS rules affecting ember-icon class and correct them. -->
+                  <span class="stage-indicator stage-ember">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon">
+                      <!-- Ember base shape -->
+                      <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
+                            fill="#FF7F00"
+                            stroke="#CC5500"
+                            stroke-width="2" />
+
+                      <!-- Inner glow -->
+                      <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z"
+                            fill="#FFCC00"
+                            opacity="0.8" />
+
+                      <!-- Ember highlights -->
+                      <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z"
+                            fill="#FFFFFF"
+                            opacity="0.4" />
+                    </svg>
+                    Ember
+                  </span>
+                  {{ end }}
+                  {{ if eq . "fire" }}
+                  <span class="stage-indicator stage-fire">
+                    🔥
+                    Fire
+                  </span>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
+            <div class="tag-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem; overflow: hidden;">
+              {{ range .Params.tags }}
+              {{ if eq . "ember" }}
+              <span class="tag tag-ember">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon" style="width: 0.8rem; height: 0.8rem; margin-right: 0.2rem;">
+                  <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z" fill="#FF7F00" stroke="#CC5500" stroke-width="2"></path>
+                  <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z" fill="#FFCC00" opacity="0.8"></path>
+                  <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z" fill="#FFFFFF" opacity="0.4"></path>
+                </svg>
+                {{ . }}
+              </span>
+              {{ else if eq . "fire" }}
+              <span class="tag tag-fire">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="fire-icon" style="width: 0.8rem; height: 0.8rem; margin-right: 0.2rem;">
+                  <!-- Background -->
+                  <rect width="400" height="300" fill="#2c3e50" />
+
+                  <!-- Ground/Dirt -->
+                  <ellipse cx="200" cy="250" rx="150" ry="30" fill="#5d4037" />
+
+                  <!-- Stones around fire -->
+                  <circle cx="140" cy="240" r="15" fill="#7f8c8d" />
+                  <circle cx="170" cy="250" r="18" fill="#95a5a6" />
+                  <circle cx="210" cy="250" r="16" fill="#7f8c8d" />
+                  <circle cx="245" cy="245" r="14" fill="#95a5a6" />
+                  <circle cx="270" cy="235" r="15" fill="#7f8c8d" />
+
+                  <!-- Logs -->
+                  <path d="M150,230 L120,210 L125,205 L160,225 Z" fill="#8B4513" />
+                  <path d="M250,230 L280,210 L275,205 L240,225 Z" fill="#8B4513" />
+                  <path d="M160,235 L140,215 L145,210 L170,230 Z" fill="#A0522D" />
+                  <path d="M240,235 L260,215 L255,210 L230,230 Z" fill="#A0522D" />
+
+                  <!-- Fire base -->
+                  <ellipse cx="200" cy="220" rx="40" ry="15" fill="#e67e22" />
+
+                  <!-- Main fire flames -->
+                  <g>
+                    <!-- Large center flame -->
+                    <path d="M200,120 Q170,170 180,200 Q190,220 200,210 Q210,220 220,200 Q230,170 200,120" fill="#e74c3c" />
+
+                    <!-- Left flame -->
+                    <path d="M180,140 Q160,180 170,210 Q180,220 185,210 Q190,220 190,200 Q195,180 180,140" fill="#d35400" />
+
+                    <!-- Right flame -->
+                    <path d="M220,140 Q240,180 230,210 Q220,220 215,210 Q210,220 210,200 Q205,180 220,140" fill="#d35400" />
+
+                    <!-- Center flame -->
+                    <path d="M200,100 Q185,150 190,190 Q195,210 200,200 Q205,210 210,190 Q215,150 200,100" fill="#f39c12" />
+
+                    <!-- Inner flame -->
+                    <path d="M200,130 Q190,160 195,190 Q198,200 200,195 Q202,200 205,190 Q210,160 200,130" fill="#f1c40f" />
+                  </g>
+
+                  <!-- Sparks -->
+                  <circle cx="190" cy="120" r="2" fill="#f1c40f" />
+                  <circle cx="210" cy="110" r="1.5" fill="#f1c40f" />
+                  <circle cx="195" cy="100" r="1" fill="#f1c40f" />
+                  <circle cx="205" cy="105" r="1" fill="#f1c40f" />
+                  <circle cx="185" cy="115" r="1.2" fill="#f1c40f" />
+
+                  <!-- Smoke -->
+                  <path d="M200,100 Q190,80 200,60 Q210,40 200,20" fill="none" stroke="#ecf0f1" stroke-width="2" opacity="0.3" />
+                  <path d="M210,110 Q220,90 210,70 Q200,50 210,30" fill="none" stroke="#ecf0f1" stroke-width="1.5" opacity="0.2" />
+                  <path d="M190,110 Q180,90 190,70 Q200,50 190,30" fill="none" stroke="#ecf0f1" stroke-width="1.5" opacity="0.2" />
+                </svg>
+                {{ . }}
+              </span>
+              {{ else }}
+              <span class="tag">{{ . }}</span>
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <p class="post-description">{{ .Description }}</p>
+        
+        <!-- Expanded content (hidden by default) -->
+        <div class="idea-expanded">
+          <!-- Stage navigation -->
+          <div class="stage-navigation">
+            {{ if in .Params.stages "spark" }}
+            <button class="stage-nav-button active" data-target="stage-spark">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="spark-icon" style="margin-right: 0.3rem; width: 0.9rem; height: 0.9rem;">
+                <!-- Single spark shape -->
+                <path d="M50,10 L60,40 L90,50 L60,60 L50,90 L40,60 L10,50 L40,40 Z"
+                      fill="#FFD700"
+                      stroke="#FF8C00"
+                      stroke-width="2" />
+                <!-- Center glow -->
+                <circle cx="50" cy="50" r="15" fill="#FFFFFF" opacity="0.5" />
+              </svg>
+              Spark
+            </button>
+            {{ end }}
+            {{ if in .Params.stages "ember" }}
+            <button class="stage-nav-button" data-target="stage-ember">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="ember-icon" style="margin-right: 0.3rem; width: 0.9rem; height: 0.9rem;">
+                <!-- Ember base shape -->
+                <path d="M30,75 C30,55 45,45 50,25 C55,45 70,55 70,75 C70,90 60,95 50,95 C40,95 30,90 30,75 Z"
+                      fill="#FF7F00"
+                      stroke="#CC5500"
+                      stroke-width="2" />
+
+                <!-- Inner glow -->
+                <path d="M35,70 C35,55 45,50 50,35 C55,50 65,55 65,70 C65,82 58,85 50,85 C42,85 35,82 35,70 Z"
+                      fill="#FFCC00"
+                      opacity="0.8" />
+
+                <!-- Ember highlights -->
+                <path d="M40,65 C40,55 45,52 50,42 C55,52 60,55 60,65 C60,75 55,77 50,77 C45,77 40,75 40,65 Z"
+                      fill="#FFFFFF"
+                      opacity="0.4" />
+              </svg>
+              Ember
+            </button>
+            {{ end }}
+            {{ if in .Params.stages "fire" }}
+            <button class="stage-nav-button" data-target="stage-fire">Fire</button>
+            {{ end }}
+          </div>
+          
+          <!-- Stage content -->
+          {{ if in .Params.stages "spark" }}
+          <div id="stage-spark" class="idea-stage idea-stage-spark">
+            <h4>Spark</h4>
+            <div>{{ .Params.sparkContent | markdownify }}</div>
+          </div>
+          {{ end }}
+          
+          {{ if in .Params.stages "ember" }}
+          <div id="stage-ember" class="idea-stage idea-stage-ember" style="display: none;">
+            <h4>Ember</h4>
+            <div>{{ .Params.emberContent | markdownify }}</div>
+          </div>
+          {{ end }}
+          
+          {{ if in .Params.stages "fire" }}
+          <div id="stage-fire" class="idea-stage idea-stage-fire" style="display: none;">
+            <h4>Fire</h4>
+            <div>{{ .Params.fireContent | markdownify }}</div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<link rel="stylesheet" href="/css/great-ideas.css">
+<script src="/js/great-ideas.js"></script>
+{{ end }}

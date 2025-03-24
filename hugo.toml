@@ -24,6 +24,10 @@ publishDir = 'docs'
     name = 'Thoughts'
     url = '/posts/'
     weight = 20
+  [[menu.main]]
+    name = 'Great Ideas'
+    url = '/great-ideas/'
+    weight = 30
 
 # Custom parameters
 [params]
