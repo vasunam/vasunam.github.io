@@ -4,7 +4,7 @@ date: 2025-03-22
 draft: false
 ---
 
-<p class="drop-cap">I'm an AI-native Product Manager with a foundation in engineering, a growing obsession with design, and a belief that we're entering an LLM-first era where <em>product innovation</em>—not just technical execution—will define category leaders.</p>
+<p class="drop-cap">My name is Namratha. I'm an AI-native Product Manager with a foundation in engineering, a growing obsession with design, and a belief that we're entering an LLM-first era where <em>product innovation</em>—not just technical execution—will define category leaders.</p>
 
 <p>I've built zero-to-one AI-powered tools that have delivered real results: at <strong>Clerkie</strong>, I launched an AI CRM that processed hundreds of thousands in payments and unlocked millions in enterprise pipeline; at <strong>SmartCue</strong>, I drove adoption of a sales enablement platform powered by AI-driven demos.</p>
 
