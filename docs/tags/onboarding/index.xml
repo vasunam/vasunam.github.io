@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Onboarding on Namratha Vasu</title>
+    <link>https://vasunam.github.io/tags/onboarding/</link>
+    <description>Recent content in Onboarding on Namratha Vasu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vasunam.github.io/tags/onboarding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Udio&#39;s Onboarding Flow: Hitting the Right Notes (and Missing a Few)</title>
+      <link>https://vasunam.github.io/posts/udios-onboarding-flow/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://vasunam.github.io/posts/udios-onboarding-flow/</guid>
+      <description>&lt;p&gt;I recently took Udio—a promising new music-generation app—for a spin, and it quickly reminded me just how crucial first impressions are in shaping a user&amp;rsquo;s experience.&lt;/p&gt;&#xA;&lt;p&gt;Right away, Udio greets you with a clean, familiar login screen: &amp;ldquo;Sign up for free to continue,&amp;rdquo; with the usual suspects like Google, Apple, and Discord waiting to authenticate you. On the right side of the screen, there&amp;rsquo;s a fun little teaser: &amp;ldquo;A song about logging into Udio is loading&amp;hellip;&amp;rdquo;. Clever and playful—except that the song never actually loaded. Not exactly the smooth start I was hoping for.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
