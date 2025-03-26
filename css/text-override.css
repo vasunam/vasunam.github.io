@@ -29,6 +29,23 @@ h1, h2, h4, h5, h6, .card h1, .card h2, .card h4, .card h5, .card h6, .section h
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
+/* Specific styling for content headings in blog posts */
+.content h1, .content h2, .content h4, .content h5, .content h6 {
+    color: #8B3A3A !important;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Override inline styles on headings - with specific targeting */
+/* Article title h1 (reddish brown) */
+article.card header h1 {
+    color: #8B3A3A !important;
+}
+
+/* Section/page h1 elements (white) */
+h1.mb-0, .thoughts-heading h1, h1[style*="background-color: rgba(139, 58, 58"] {
+    color: #F0EEE6 !important;
+}
+
 /* Special styling for h3 elements */
 h3, .card h3, .section h3 {
     color: #000000 !important;
