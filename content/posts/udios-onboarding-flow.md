@@ -1,5 +1,5 @@
 ---
-title: "Udio's Onboarding Flow: Hitting the Right Notes (and Missing a Few)"
+title: "Product Onboarding Breakdown: Udio"
 date: "2025-03-25"
 tags: ["ux", "product-design", "onboarding"]
 description: "An analysis of Udio's user onboarding experience - what works and what could be improved"
