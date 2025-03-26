@@ -22,7 +22,6 @@ Once logged in, I hit another stumbling block. Udio presented me with a large, s
 <p align="center"><em>The song creation interface with a blank prompt and placeholder text examples.</em></p>
 
 
-The core product is compelling. Udio's interface is clean and the placeholder examples are quirky and fun, showing personality in the product. The authentication options are familiar and straightforward, making the initial sign-up process relatively frictionless.
 
 Here's how I think Udio could tackle this:
 
