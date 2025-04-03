@@ -1,0 +1,26 @@
+/* Great Ideas section specific overrides with !important to ensure they take precedence */
+
+/* Target the main title at the top of the page */
+article.post h1.post-title {
+    color: #8B3A3A !important;
+}
+
+/* Target the content heading */
+article.post .post-content h1 {
+    color: #8B3A3A !important;
+}
+
+/* Target by ID for maximum specificity */
+#windsurf-preview-bringing-applications-to-life-inside-your-ide {
+    color: #8B3A3A !important;
+}
+
+/* Additional override for any h1 in the post content */
+.post-content h1 {
+    color: #8B3A3A !important;
+}
+
+/* Force override using multiple selectors */
+h1[id], h1.post-title {
+    color: #8B3A3A !important;
+}
