@@ -46,6 +46,11 @@ h1.mb-0, .thoughts-heading h1, h1[style*="background-color: rgba(139, 58, 58"] {
     color: #F0EEE6 !important;
 }
 
+/* Great Ideas headings */
+.post-title, #windsurf-preview-bringing-applications-to-life-inside-your-ide, .great-ideas h1 {
+    color: #8B3A3A !important;
+}
+
 /* Special styling for h3 elements */
 h3, .card h3, .section h3 {
     color: #000000 !important;
