@@ -1,6 +1,6 @@
 ---
 title: "Windsurf Preview Feature"
-date: "2025-03-23"
+date: "2025-04-02"
 source: "Codeium"
 tags: ["productivity", "ai", "ide", "developer-tools"]
 stages: ["spark"]
