@@ -65,7 +65,7 @@
     
 <article class="post">
   <header class="post-header">
-    <h1 class="post-title">Windsurf Preview Feature</h1>
+    <h1 class="post-title" style="color: #8B3A3A !important;">Windsurf Preview Feature</h1>
     <div class="post-meta">
       <div class="idea-source">Codeium</div>
       <time datetime="2025-04-02">April 2, 2025</time>
@@ -167,8 +167,22 @@
 
   
 <link rel="stylesheet" href="/css/great-ideas.css">
+<link rel="stylesheet" href="/css/great-ideas-override.css">
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    
+    document.querySelectorAll('.post-title').forEach(heading => {
+      heading.style.color = '#8B3A3A';
+    });
+    
+    document.querySelectorAll('.post-content h1').forEach(heading => {
+      heading.style.color = '#8B3A3A';
+    });
+    
+    if (document.getElementById('windsurf-preview-bringing-applications-to-life-inside-your-ide')) {
+      document.getElementById('windsurf-preview-bringing-applications-to-life-inside-your-ide').style.color = '#8B3A3A';
+    }
+
     
     const stageNavButtons = document.querySelectorAll('.stage-nav-button');
     const stageContents = document.querySelectorAll('.idea-stage');
