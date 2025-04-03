@@ -16,11 +16,11 @@
       <description>&lt;p&gt;I recently took Udio—a promising new music-generation app—for a spin, and it quickly reminded me just how crucial first impressions are in shaping a user&amp;rsquo;s experience.&lt;/p&gt;&#xA;&lt;p&gt;Right away, Udio greets you with a clean, familiar login screen: &amp;ldquo;Sign up for free to continue,&amp;rdquo; with the usual suspects like Google, Apple, and Discord waiting to authenticate you. On the right side of the screen, there&amp;rsquo;s a fun little teaser: &amp;ldquo;A song about logging into Udio is loading&amp;hellip;&amp;rdquo;. Clever and playful—except that the song never actually loaded. Not exactly the smooth start I was hoping for.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Smart Compose</title>
+      <title>Windsurf Preview Feature</title>
       <link>https://vasunam.github.io/great-ideas/smart-compose/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://vasunam.github.io/great-ideas/smart-compose/</guid>
-      <description>&lt;h1 id=&#34;smart-compose-evolution-of-an-ai-writing-assistant&#34;&gt;Smart Compose: Evolution of an AI Writing Assistant&lt;/h1&gt;&#xA;&lt;p&gt;Gmail&amp;rsquo;s Smart Compose feature represents a fascinating evolution of AI-assisted writing, progressing from basic predictive text to a sophisticated writing assistant that understands context, style, and intent.&lt;/p&gt;&#xA;&lt;p&gt;This case study examines how the feature evolved through three distinct stages of development, from initial concept to fully realized product feature.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;windsurf-preview-bringing-applications-to-life-inside-your-ide&#34;&gt;Windsurf Preview: Bringing Applications to Life Inside Your IDE&lt;/h1&gt;&#xA;&lt;p&gt;The Windsurf Preview feature represents a significant advancement in IDE technology, seamlessly integrating application testing and development in a single environment.&lt;/p&gt;&#xA;&lt;p&gt;By allowing developers to view and interact with their running applications directly within the IDE, Windsurf eliminates the traditional context-switching between coding and testing environments, creating a more unified and efficient workflow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stories Feature</title>
