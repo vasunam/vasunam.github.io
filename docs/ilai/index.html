@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Basic SEO -->
+    <title>Ilai | Respect the Ritual.</title>
+    <meta name="description" content="Real spices. Single-origin tea from the Southern hills. The chai your grandmother made, reimagined for your morning." />
+
+    <!-- Tailwind CSS (CDN for quick prototyping) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom Tailwind Configuration for Brand Colors and Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ilai-cream': '#FDF8F0',
+                        'ilai-terracotta': '#B85C38',
+                        'ilai-saffron': '#D67C2C',
+                        'ilai-green': '#6D8F4F',
+                        'ilai-dark': '#1C1C1C',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Fonts: Inter + Playfair Display -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+<body class="bg-ilai-cream text-ilai-dark font-sans antialiased">
+    <!-- Skip link for accessibility -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-ilai-dark text-white px-4 py-2 rounded-md z-50">Skip to content</a>
+
+    <!-- Announcement Bar -->
+    <div class="bg-ilai-green text-white text-center py-2 text-sm font-medium tracking-wider">
+        <span aria-label="Free shipping announcement">Free shipping on Starter Kits this week. 🌿</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-10 bg-ilai-cream/95 backdrop-blur-sm shadow-sm" role="banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-3xl font-serif font-extrabold text-ilai-terracotta tracking-tight" aria-label="Ilai home">
+                        Ilai
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium" aria-label="Primary navigation">
+                    <a href="#shop" class="hover:text-ilai-saffron transition duration-200">Shop</a>
+                    <a href="#ritual" class="hover:text-ilai-saffron transition duration-200">The Ritual (Brew Guide)</a>
+                    <a href="#story" class="hover:text-ilai-saffron transition duration-200">Our Story</a>
+                    <a href="#account" class="hover:text-ilai-saffron transition duration-200">Account</a>
+                </nav>
+
+                <!-- Icons (Cart/Mobile Menu) -->
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 rounded-full hover:bg-ilai-terracotta/10 transition duration-200" aria-label="Shopping cart">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 text-ilai-dark" aria-hidden="true"></i>
+                        <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-0.5 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-ilai-terracotta rounded-full">
+                            0
+                        </span>
+                    </button>
+
+                    <!-- Mobile Menu Button (visual only for now) -->
+                    <button class="p-2 md:hidden rounded-full hover:bg-ilai-terracotta/10 transition duration-200" aria-label="Open navigation menu">
+                        <i data-lucide="menu" class="w-6 h-6 text-ilai-dark" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="relative h-[80vh] flex items-center justify-center text-center overflow-hidden mb-20" aria-labelledby="hero-heading">
+            <!-- Visual background -->
+            <div class="absolute inset-0 bg-cover bg-center bg-gray-900 opacity-70" style="background-image: url('https://placehold.co/1200x800/2C2C2C/FDF8F0?text=ASMR+Chai+Pour+Video');" role="img" aria-label="Chai pouring into a cup"></div>
+
+            <div class="relative z-10 p-6 max-w-4xl mx-auto rounded-xl">
+                <h1 id="hero-heading" class="font-serif text-5xl sm:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                    Respect the Ritual.
+                </h1>
+                <p class="text-xl sm:text-2xl text-white font-light mb-10 drop-shadow-md">
+                    Real spices. Single-origin tea from the Southern hills. The chai your grandmother made, reimagined for your morning.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#shop" class="inline-block px-8 py-3 bg-ilai-saffron text-white text-lg font-semibold rounded-full shadow-lg hover:bg-ilai-terracotta transition duration-300 transform hover:scale-105">
+                        Shop the Starter Kit
+                    </a>
+                    <a href="#ritual" class="inline-block px-8 py-3 border border-white text-white text-lg font-semibold rounded-full hover:bg-white hover:text-ilai-dark transition duration-300">
+                        View the Ritual
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto Section -->
+        <section id="story" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+            <h2 class="font-serif text-4xl sm:text-5xl font-extrabold text-ilai-terracotta mb-6">
+                This isn't "Chai Tea."
+            </h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-4">We’ll keep it brief: Chai means tea. Saying "Chai Tea" is saying "Tea Tea."</p>
+                <p class="mb-4">And real chai doesn't come from a pump bottle or a concentrate box full of sugar. It comes from leaves, spices, milk, and heat.</p>
+                <p class="font-semibold text-ilai-dark">At Ilai, we source high-grown tea from the Western Ghats and whole spices that actually bite back. No dust. No syrups. Just the leaf.</p>
+            </div>
+        </section>
+
+        <!-- Choose Your Ritual (Product Split) -->
+        <section id="shop" class="bg-gray-100 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-center font-serif text-4xl font-bold text-ilai-dark mb-12">Choose Your Ritual</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Option A: The Purist -->
+                    <article class="bg-white rounded-xl shadow-2xl overflow-hidden group hover:shadow-ilai-saffron/30 transition duration-300" aria-label="The Purist loose leaf chai">
+                        <div class="h-64 bg-cover bg-center" style="background-image: url('https://placehold.co/600x400/6D8F4F/FDF8F0?text=Loose+Leaf+%26+Whole+Spices');" role="img" aria-label="Loose leaf tea with whole spices"></div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-serif font-bold text-ilai-dark mb-2">The Purist (Loose Leaf)</h3>
+                            <p class="text-gray-500 italic mb-6">"I have 5 minutes and I love the process."</p>
+                            <p class="text-gray-700 mb-8">The authentic stovetop experience. Our Ilai Blend is packed with visible, fragrant whole spices for maximum flavor extraction.</p>
+                            <a href="#" class="px-6 py-2.5 bg-ilai-terracotta text-white font-semibold rounded-full hover:bg-ilai-dark transition duration-300">
+                                Shop Loose Leaf
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Option B: The Modernist -->
+                    <article class="bg-white rounded-xl shadow-2xl overflow-hidden group hover:shadow-ilai-saffron/30 transition duration-300" aria-label="The Modernist instant chai">
+                        <div class="h-64 bg-cover bg-center" style="background-image: url('https://placehold.co/600x400/B85C38/FDF8F0?text=Instant+Chai+Powder');" role="img" aria-label="Instant chai powder in a tin"></div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-serif font-bold text-ilai-dark mb-2">The Modernist (Instant)</h3>
+                            <p class="text-gray-500 italic mb-6">"I have 30 seconds and I need to wake up."</p>
+                            <p class="text-gray-700 mb-8">Micro-ground perfection. Authentic chai flavor—no compromise, no straining, just a spoon and hot water/milk.</p>
+                            <a href="#" class="px-6 py-2.5 border-2 border-ilai-saffron text-ilai-saffron font-semibold rounded-full hover:bg-ilai-saffron hover:text-white transition duration-300">
+                                Shop Instant
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Education -->
+        <section id="ritual" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="text-center font-serif text-4xl sm:text-5xl font-extrabold text-ilai-dark mb-16">
+                Why Stovetop Matters.
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <!-- Step 1: The Boil -->
+                <article class="p-6 rounded-xl" aria-label="Step 1: The Boil">
+                    <i data-lucide="flame" class="w-12 h-12 text-ilai-saffron mx-auto mb-4" aria-hidden="true"></i>
+                    <h3 class="text-2xl font-semibold mb-3">1. The Boil</h3>
+                    <p class="text-gray-600">The heat is essential. Boiling extracts the crucial oils and bold flavors from the whole spices, not just the color from the tea.</p>
+                </article>
+
+                <!-- Step 2: The Aeration -->
+                <article class="p-6 rounded-xl" aria-label="Step 2: The Aeration">
+                    <i data-lucide="milk" class="w-12 h-12 text-ilai-saffron mx-auto mb-4" aria-hidden="true"></i>
+                    <h3 class="text-2xl font-semibold mb-3">2. The Aeration</h3>
+                    <p class="text-gray-600">Pouring or 'pulling' the chai back and forth adds air, cooling it slightly and creating a velvety smooth texture you can't get otherwise.</p>
+                </article>
+
+                <!-- Step 3: The Sip -->
+                <article class="p-6 rounded-xl" aria-label="Step 3: The Sip">
+                    <i data-lucide="heart" class="w-12 h-12 text-ilai-saffron mx-auto mb-4" aria-hidden="true"></i>
+                    <h3 class="text-2xl font-semibold mb-3">3. The Sip</h3>
+                    <p class="text-gray-600">The final result: Smooth, spicy, and soul-warming. A flavor that is grounded in ritual and ready for the day ahead.</p>
+                </article>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#ritual" class="inline-block px-8 py-3 bg-ilai-dark text-white text-lg font-semibold rounded-full shadow-lg hover:bg-ilai-terracotta transition duration-300 transform hover:scale-105">
+                    Master the Ritual
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-ilai-cream pt-16 pb-8" aria-label="Site footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="text-3xl font-serif font-extrabold text-ilai-terracotta mb-4">Ilai</h3>
+                    <p class="text-sm text-gray-400">Rooted in the Ghats. Brewed in Your City.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Helpful Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-ilai-terracotta transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-ilai-terracotta transition">Wholesale</a></li>
+                        <li><a href="#" class="hover:text-ilai-terracotta transition">Shipping &amp; Returns</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Connect</h4>
+                    <div class="flex flex-col space-y-2 text-sm">
+                        <a href="#" class="hover:text-ilai-terracotta transition flex items-center">
+                            <i data-lucide="instagram" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="hover:text-ilai-terracotta transition flex items-center">
+                            <i data-lucide="tiktok" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Spill the Tea.</h4>
+                    <p class="text-sm text-gray-400 mb-4">Recipes, playlists, and drops. No spam, just spice.</p>
+                    <form class="flex flex-col sm:flex-row gap-2" aria-label="Newsletter signup">
+                        <label class="sr-only" for="newsletter-email">Email address</label>
+                        <input id="newsletter-email" type="email" placeholder="your@email.com" class="px-4 py-2 w-full rounded-lg sm:rounded-l-lg sm:rounded-r-none text-ilai-dark focus:outline-none focus:ring-2 focus:ring-ilai-terracotta" required />
+                        <button type="submit" class="px-4 py-2 bg-ilai-terracotta text-white font-semibold rounded-lg sm:rounded-r-lg sm:rounded-l-none hover:bg-ilai-saffron transition duration-300">
+                            Join
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-6 text-center text-xs text-gray-500">
+                &copy; <span id="year"></span> Ilai. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons and year -->
+    <script>
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
